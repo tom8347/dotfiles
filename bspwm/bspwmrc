@@ -21,8 +21,7 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config -m HDMI2 top_padding 30
 
-exec /home/tom/polybar_autohide/poly
-echo 0 | sudo tee /sys/module/snd_hda_intel/parameters/power_savebar_autohide
+exec /home/tom/polybar_autohide/polybar_autohide
 
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
 #bspc rule -a Chromium desktop='^2'
