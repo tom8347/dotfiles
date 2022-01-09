@@ -1,0 +1,35 @@
+#! /bin/sh
+
+killall sxhkd && sxhkd &
+
+bspc monitor HDMI2 -d I II III IV V VI
+# bspc monitor HDMI-1 -d VII VIII
+bspc monitor DP1 -d IX X
+
+bspc config border_width         4
+bspc config window_gap           0
+
+bspc config normal_border_color "#44475a"
+bspc config active_border_color "#bd93f9"
+bspc config focused_border_color "#ff79c6"
+bspc config presel_feedback_color "#6272a4"
+
+bspc config focus_follows_pointer true
+
+bspc config split_ratio          0.5
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config -m HDMI2 top_padding 30
+
+exec /home/tom/polybar_autohide/poly
+echo 0 | sudo tee /sys/module/snd_hda_intel/parameters/power_savebar_autohide
+
+#bspc rule -a Gimp desktop='^8' state=floating follow=on
+#bspc rule -a Chromium desktop='^2'
+#bspc rule -a mplayer2 state=floating
+#bspc rule -a Kupfer.py focus=on
+#bspc rule -a Screenkey manage=off
+
+
+
+

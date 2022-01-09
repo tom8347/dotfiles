@@ -1,0 +1,7 @@
+[Contractor Entry]
+Name=Open In Terminal
+Icon=terminal
+Description=Open in terminal
+MimeType=inode;application/x-sh;application/x-executable
+Exec=kitty -d %U
+Gettext-Domain=kitty

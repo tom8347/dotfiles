@@ -1,0 +1,7 @@
+[Contractor Entry]
+Name=Open as Administrator
+Icon=pantheon-files
+Description=Open current folder as root privilege
+MimeType=inode/directory;
+Exec=pkexec io.elementary.files %U
+Gettext-Domain=file manager

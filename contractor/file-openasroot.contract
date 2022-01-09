@@ -1,0 +1,8 @@
+[Contractor Entry]
+Name=Edit as Administrator
+Icon=gvim
+Description=Edit file via root user privilege
+MimeType=text/plain;
+Exec=sudo gvim %U
+Gettext-Domain=code
+
