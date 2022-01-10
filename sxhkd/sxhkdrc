@@ -170,9 +170,9 @@ super + ctrl + space
 super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
-#
-# move/resize
-#
+#preselect the direction of next window
+super + ctrl + {h,j,k,l}
+    bspc node -p {west,south,north,east}
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
