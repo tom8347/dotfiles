@@ -44,7 +44,7 @@ alt + p
 alt + g
   firefox
 
-alt + space
+super + space
   rofi -show combi -combi-modi "drun,run,window,ssh" -modi combi
 alt + s
   xfce4-settings-manager

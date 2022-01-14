@@ -1,3 +1,12 @@
 keycode 9 = dead_grave
 keycode 49 = Escape
 keycode 108 = Super_L
+
+clear mod1
+clear mod4
+
+keycode 64 = Super_L
+keycode 133 = Alt_L
+
+add mod1 = Alt_L
+add mod4 = Super_L Super_R
