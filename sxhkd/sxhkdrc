@@ -129,7 +129,7 @@ super + {_,shift + }{h,j,k,l}
 super + {u,i}
 	bspc desktop -f {prev,next}.local
 
-super + shift + {p,n}
+super + shift + {u,i}
     bspc node -d {prev,next}.local
 # needs to be here for the trackpad
 ctrl + {F9,F8}
