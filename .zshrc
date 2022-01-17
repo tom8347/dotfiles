@@ -31,6 +31,7 @@ alias hpc5="ssh tsk18@login-5.rcs.ic.ac.uk"
 alias hpc6="ssh tsk18@login-6.rcs.ic.ac.uk"
 alias hpc7="ssh tsk18@login-7.rcs.ic.ac.uk"
 alias server="ssh tom@192.168.1.30"
+alias gstat="git status"
 
 cdls() {
     local dir="$1"
