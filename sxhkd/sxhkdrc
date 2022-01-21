@@ -20,6 +20,9 @@ alt + f
 alt + w
   firefox --new-window web.whatsapp.com
 
+alt + n
+  chromium --new-window netflix.com
+
 ctrl + alt + s
   sleep 1 ; xset dpms force off
 
