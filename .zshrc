@@ -32,6 +32,7 @@ alias hpc6="ssh tsk18@login-6.rcs.ic.ac.uk"
 alias hpc7="ssh tsk18@login-7.rcs.ic.ac.uk"
 alias server="ssh tom@192.168.1.30"
 alias gstat="git status"
+alias yeet="rm"
 
 cdls() {
     local dir="$1"
@@ -54,6 +55,7 @@ rlf() {
 lf() {
     ls -t * | head -1
 }
+
 
 setopt autocd
 
