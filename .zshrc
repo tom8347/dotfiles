@@ -25,13 +25,20 @@ export EDITOR="nvim"
 
 alias svenv="source .venv/bin/activate"
 alias mvenv="python -m venv .venv"
+
 alias hpc="ssh tsk18@login.cx1.hpc.imperial.ac.uk"
 alias hpc4="ssh tsk18@login-4.rcs.ic.ac.uk"
 alias hpc5="ssh tsk18@login-5.rcs.ic.ac.uk"
 alias hpc6="ssh tsk18@login-6.rcs.ic.ac.uk"
 alias hpc7="ssh tsk18@login-7.rcs.ic.ac.uk"
+
 alias server="ssh tom@192.168.1.30"
+
 alias gstat="git status"
+alias gadd="git add --all :/"
+alias gcommit="git commit -m"
+alias gpush="git push"
+
 alias yeet="rm"
 
 cdls() {
