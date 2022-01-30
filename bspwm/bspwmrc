@@ -21,6 +21,8 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config -m HDMI2 top_padding 30
 
+bspc rule -a Matplotlib state=floating
+
 exec /home/tom/polybar_autohide/polybar_autohide
 
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
@@ -28,7 +30,6 @@ exec /home/tom/polybar_autohide/polybar_autohide
 #bspc rule -a mplayer2 state=floating
 #bspc rule -a Kupfer.py focus=on
 #bspc rule -a Screenkey manage=off
-
 
 
 
