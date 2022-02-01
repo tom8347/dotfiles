@@ -38,6 +38,7 @@ alias gstat="git status"
 alias gadd="git add --all :/"
 alias gcommit="git commit -m"
 alias gpush="git push"
+alias gpull="git pull"
 
 alias yeet="rm"
 
