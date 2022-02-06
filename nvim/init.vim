@@ -45,8 +45,8 @@ vnoremap > >gv
 nnoremap <leader>f :Files<CR>
 
 "these are to switch buffers quickly
-map <leader>n :bn<CR>
-map <leader>p :bp<CR>
+map <leader>o :bn<CR>
+map <leader>i :bp<CR>
 
 autocmd FileType python inoremap <buffer> <F2> <ESC>:w<CR>:!python "%"<CR>
 autocmd FileType python nnoremap <buffer> <F2> :w<CR>:!python "%"<CR>

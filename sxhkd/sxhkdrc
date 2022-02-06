@@ -49,8 +49,9 @@ alt + g
 
 super + space
   rofi -show combi -combi-modi "drun,run,window" -modi combi
+
 alt + s
-  xfce4-settings-manager
+  firefox --new-window open.spotify.com
 
 super + v
   xfce4-popup-clipman
