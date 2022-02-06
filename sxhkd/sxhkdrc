@@ -51,7 +51,7 @@ super + space
   rofi -show combi -combi-modi "drun,run,window" -modi combi
 
 alt + s
-  firefox --new-window open.spotify.com
+  librewolf --new-window open.spotify.com
 
 super + v
   xfce4-popup-clipman
