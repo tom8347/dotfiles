@@ -24,6 +24,7 @@ bspc config -m HDMI2 top_padding 30
 bspc rule -a Matplotlib state=floating
 bspc rule -a Mathpix\ Snipping\ Tool state=floating
 bspc rule -a scrcpy state = floating
+bspc rule -a Evolution-alarm-notify state = floating
 
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
 #bspc rule -a Chromium desktop='^2'
