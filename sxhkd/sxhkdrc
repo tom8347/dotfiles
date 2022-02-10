@@ -63,7 +63,7 @@ alt + q
   adb connect 192.168.1.7:5555 && sleep 1 && scrcpy --turn-screen-off --stay-awake --power-off-on-close --serial 192.168.1.7:5555 --max-size 750
 
 alt + a
-  env ANDROID_SERIAL=ce0718276289a63d01 droidcam adb 4747
+  signal-desktop
 
 alt + e
   evolution
