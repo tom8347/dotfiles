@@ -3,5 +3,5 @@ Name=Open In Terminal
 Icon=terminal
 Description=Open in terminal
 MimeType=inode;application/x-sh;application/x-executable
-Exec=xterm -e "cd "%U" && /bin/zsh"
+Exec=kitty -d %U
 Gettext-Domain=kitty
