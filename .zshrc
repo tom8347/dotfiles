@@ -26,7 +26,7 @@ export EDITOR="nvim"
 alias svenv="source .venv/bin/activate"
 alias mvenv="python -m venv .venv"
 
-alias hpc="ssh tsk18@login.cx1.hpc.imperial.ac.uk"
+alias hpc="ssh tsk18@login.hpc.imperial.ac.uk"
 alias hpc4="ssh tsk18@login-4.rcs.ic.ac.uk"
 alias hpc5="ssh tsk18@login-5.rcs.ic.ac.uk"
 alias hpc6="ssh tsk18@login-6.rcs.ic.ac.uk"
