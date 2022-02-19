@@ -12,7 +12,7 @@ alt + ctrl + b
   vivaldi-stable -n
 
 alt + t
-  uxterm
+  kitty
 
 alt + f
   io.elementary.files -n
