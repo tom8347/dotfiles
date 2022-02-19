@@ -39,7 +39,7 @@ alt + l
   xdotool key Right
 
 alt + m
-  xterm htop
+  xfce4-taskmanager
 
 alt + p
   pamac-manager
