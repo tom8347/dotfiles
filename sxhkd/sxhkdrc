@@ -21,22 +21,19 @@ alt + w
   firefox --new-window web.whatsapp.com
 
 alt + n
-  chromium --new-window netflix.com
+  firefox --new-window netflix.com
 
 ctrl + alt + s
   sleep 1 ; xset dpms force off
 
 alt + j
-  xdotool key Down
-
+  xdotool keyup j key --clearmodifiers Down
 alt + k
-  xdotool key Up
-
+  xdotool keyup k key --clearmodifiers Up
 alt + h
-  xdotool key Left
-
+  xdotool keyup h key --clearmodifiers Left
 alt + l
-  xdotool key Right
+  xdotool keyup l key --clearmodifiers Right
 
 alt + m
   xfce4-taskmanager
@@ -51,7 +48,7 @@ super + space
   rofi -show combi -combi-modi "drun,run,window" -modi combi
 
 alt + s
-  librewolf --new-window open.spotify.com
+  spotify
 
 super + v
   xfce4-popup-clipman
