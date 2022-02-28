@@ -45,7 +45,7 @@ alt + g
   firefox
 
 super + space
-  rofi -show combi -combi-modi "drun,run,window" -modi combi
+  rofi -show combi -combi-modi "drun" -modi combi -show-icons
 
 alt + s
   spotify
@@ -132,10 +132,6 @@ super + {i,o}
 
 super + shift + {i,o}
     bspc node -d {prev,next}.local
-
-# needs to be here for the trackpad
-ctrl + {F9,F8}
-	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
 super + {grave,Tab}

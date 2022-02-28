@@ -42,6 +42,8 @@ alias gpull="git pull"
 
 alias yeet="rm"
 
+bindkey "^H" backward-kill-word
+
 cdls() {
     local dir="$1"
     local dir="${dir:=$HOME}"
