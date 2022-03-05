@@ -15,7 +15,7 @@
     font: "Jetbrains Mono 12";
 
     foreground: @drac-fgd;
-    background: @drac-bgd;
+    background-color: @drac-bgd;
     active-background: @drac-pnk;
     urgent-background: @drac-red;
     
