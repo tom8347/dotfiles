@@ -1,9 +1,32 @@
 #
 # wm independent hotkeys
 #
+# ---------media keys--------
+XF86AudioMute
+  amixer -D pulse set Master 1+ toggle
 
+XF86Audio{Raise,Lower}Volume
+  amixer -D pulse set Master 5%{+,-}
+
+XF86AudioPlay
+  playerctl play-pause
+
+XF86AudioPrev
+  playerctl previous
+
+XF86AudioNext
+  playerctl next
+
+#----------shutdown and reboot-----------
+super + ctrl + Delete
+  sudo reboot now
+
+super + Delete
+  sudo shutdown now
+
+#------------launch applications---------
 alt + b
-  librewolf
+  export MOZ_USE_XINPUT2=1 ; librewolf
 
 alt + shift + b
   midori
@@ -14,14 +37,17 @@ alt + ctrl + b
 alt + t
   kitty
 
+alt + r
+  librewolf --new-window teams.microsoft.com
+
 alt + f
   io.elementary.files -n
 
 alt + w
-  firefox --new-window web.whatsapp.com
+  export MOZ_USE_XINPUT2=1 ; firefox-esr --new-window web.whatsapp.com
 
 alt + n
-  firefox --new-window netflix.com
+  export MOZ_USE_XINPUT2=1 ; firefox-esr --new-window netflix.com
 
 ctrl + alt + s
   sleep 1 ; xset dpms force off
@@ -36,19 +62,19 @@ alt + l
   xdotool keyup l key --clearmodifiers Right
 
 alt + m
-  xfce4-taskmanager
+  htop
 
 alt + p
   pamac-manager
 
 alt + g
-  firefox
+  export MOZ_USE_XINPUT2=1 ; firefox-esr
 
 super + space
   rofi -show combi -combi-modi "drun" -modi combi -show-icons
 
 alt + s
-  spotify
+  flatpak run com.spotify.Client
 
 super + v
   xfce4-popup-clipman
@@ -88,7 +114,7 @@ super + alt + {q,r}
 ctrl + shift + q
   bspc node -c
 
-super + c
+super + x
   bspc node -c
 # alternate between the tiled and monocle layout
 #super + m

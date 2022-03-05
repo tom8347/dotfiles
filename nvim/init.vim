@@ -25,7 +25,7 @@ set scrolloff=8
 set sidescrolloff=8
 set clipboard+=unnamedplus
 set list
-set listchars=tab:▶\ ,trail:·,lead:·
+" set listchars=tab:▶\ ,trail:·,lead:·
 set mouse=a
 set ignorecase
 set smartcase
@@ -45,11 +45,13 @@ vnoremap > >gv
 nnoremap <leader>f :Files<CR>
 
 "these are to switch buffers quickly
-map <leader>o :bn<CR>
-map <leader>i :bp<CR>
+nnoremap <leader>o :bn<CR>
+nnoremap <leader>i :bp<CR>
+nnoremap <leader>x :bd<CR>
 
-autocmd FileType python inoremap <buffer> <F2> <ESC>:w<CR>:!python "%"<CR>
-autocmd FileType python nnoremap <buffer> <F2> :w<CR>:!python "%"<CR>
+autocmd FileType python inoremap <buffer> <F2> <ESC>:w<CR>:FloatermNew! --disposable python3 "%"<CR>
+autocmd FileType python nnoremap <buffer> <F2> :w<CR>:FloatermNew! --disposable python3 "%"<CR>
+
 
 autocmd FileType tex inoremap <buffer> <F3> <ESC>:!xdg-open "%<.pdf";<CR><CR>
 autocmd FileType tex nnoremap <buffer> <F3> :!xdg-open "%<.pdf";<CR><CR>
