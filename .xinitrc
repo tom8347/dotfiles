@@ -7,5 +7,5 @@ if [ -s ~/.Xresources ]; then
 fi
 
 
-~/.screenlayout/fixscreens.sh
+~/.dotfiles/.screenlayout/fixscreens.sh
 dbus-launch --exit-with-session bspwm
