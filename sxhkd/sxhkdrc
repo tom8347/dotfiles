@@ -41,7 +41,7 @@ alt + r
   librewolf --new-window teams.microsoft.com
 
 alt + f
-  io.elementary.files -n
+  pcmanfm
 
 alt + w
   export MOZ_USE_XINPUT2=1 ; firefox-esr --new-window web.whatsapp.com
@@ -62,7 +62,7 @@ alt + l
   xdotool keyup l key --clearmodifiers Right
 
 alt + m
-  htop
+  kitty htop
 
 alt + p
   pamac-manager
@@ -80,7 +80,7 @@ super + v
   xfce4-popup-clipman
 
 Print
-  xfce4-screenshooter -r
+  flameshot gui
 
 alt + q
   adb connect 192.168.1.7:5555 && sleep 1 && scrcpy --turn-screen-off --stay-awake --power-off-on-close --serial 192.168.1.7:5555 --max-size 750

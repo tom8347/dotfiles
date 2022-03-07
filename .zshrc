@@ -21,10 +21,12 @@ source $ZSH/oh-my-zsh.sh
 
 export LANG=en_GB.UTF-8
 
+export PATH=/home/tom/.local/bin:$PATH
+
 export EDITOR="nvim"
 
 alias svenv="source .venv/bin/activate"
-alias mvenv="python -m venv .venv"
+alias mvenv="python3 -m venv .venv"
 
 alias hpc="ssh tsk18@login.hpc.imperial.ac.uk"
 alias hpc4="ssh tsk18@login-4.rcs.ic.ac.uk"
