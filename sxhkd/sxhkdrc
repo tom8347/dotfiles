@@ -38,7 +38,7 @@ alt + t
   kitty
 
 alt + r
-  librewolf --new-window teams.microsoft.com
+  export MOZ_USE_XINPUT2=1 ; librewolf --new-window teams.microsoft.com
 
 alt + f
   pcmanfm

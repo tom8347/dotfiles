@@ -1,5 +1,13 @@
 #! /bin/sh
 
+if [ -s ~/.Xmodmap ]; then
+    xmodmap ~/.Xmodmap
+fi
+
+if [ -s ~/.Xresources ]; then
+    xrdb ~/.Xresources
+fi
+
 killall sxhkd ; sxhkd &
 killall polybar
 polybar main &
