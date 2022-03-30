@@ -71,7 +71,7 @@ alt + g
   export MOZ_USE_XINPUT2=1 ; firefox-esr
 
 super + space
-  rofi -show combi -combi-modi "drun" -modi combi -show-icons
+  rofi -show combi -combi-modi "drun, run" -modi combi -show-icons
 
 alt + s
   flatpak run com.spotify.Client
@@ -83,7 +83,7 @@ Print
   flameshot gui
 
 alt + q
-  adb connect 192.168.1.7:5555 && sleep 1 && scrcpy --turn-screen-off --stay-awake --power-off-on-close --serial 192.168.1.7:5555 --max-size 750
+  adb connect 192.168.1.7:5555 ; sleep 1 ; scrcpy --turn-screen-off --stay-awake --power-off-on-close --serial 192.168.1.7:5555 --max-size 750
 
 alt + a
   signal-desktop
@@ -94,6 +94,9 @@ alt + e
 
 
 
+# minimise focused window to tray
+super + m
+  kdocker -f
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
