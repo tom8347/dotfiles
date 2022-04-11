@@ -1,5 +1,6 @@
 {
   "languageserver": {
+
     "fortran": {
       "command": "fortls",
       "filetypes": ["fortran"],

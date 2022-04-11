@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/tom/Desktop'
+let g:netrw_dirhist_0='/home/tom'
+let g:netrw_dirhist_9='/home/tom/Documents/MSciProject/Report'
 let g:netrw_dirhist_8='/home/tom/Documents/MSciProject/Repo/ray_trace_edited/output'
 let g:netrw_dirhist_7='/home/tom/.dotfiles/bspwm'
 let g:netrw_dirhist_6='/home/tom/.dotfiles'
@@ -7,4 +10,3 @@ let g:netrw_dirhist_5='/home/tom/.dotfiles/polybar'
 let g:netrw_dirhist_4='/home/tom'
 let g:netrw_dirhist_3='/home/tom/.dotfiles/bspwm'
 let g:netrw_dirhist_2='/home/tom/.dotfiles'
-let g:netrw_dirhist_1='/home/tom/Documents/MSciProject/Repo/ray_trace_edited/output'

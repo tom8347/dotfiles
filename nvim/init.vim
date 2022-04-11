@@ -6,7 +6,7 @@ set linebreak
 set scl=yes
 set noshowmode
 set foldmethod=indent
-set foldnestmax=1
+set foldnestmax=20
 let mapleader=" "
 set hidden
 set nocompatible
@@ -53,8 +53,8 @@ autocmd FileType python inoremap <buffer> <F2> <ESC>:w<CR>:FloatermNew! --dispos
 autocmd FileType python nnoremap <buffer> <F2> :w<CR>:FloatermNew! --disposable python3 "%"<CR>
 
 
-autocmd FileType tex inoremap <buffer> <F3> <ESC>:!xdg-open "%<.pdf";<CR><CR>
-autocmd FileType tex nnoremap <buffer> <F3> :!xdg-open "%<.pdf";<CR><CR>
+autocmd FileType tex inoremap <buffer> <F3> <ESC>:!xdg-open "%<.pdf" & disown;<CR><CR>
+autocmd FileType tex nnoremap <buffer> <F3> :!xdg-open "%<.pdf" & disown;<CR><CR>
 
 autocmd FileType tex inoremap <buffer> <F2> <ESC>:w<CR>:!latexmk -pdf<CR>
 autocmd FileType tex nnoremap <buffer> <F2> :w<CR>:!latexmk -pdf<CR>
@@ -66,10 +66,12 @@ autocmd FileType tex nnoremap <buffer> <F2> :w<CR>:!latexmk -pdf<CR>
 " get word count in latex files
 function! WC()
     let filename = expand("%")
-        let cmd = "detex " . filename . " | wc -w | perl -pe 'chomp; s/ +//;'"
+    let cmd = "detex " . filename . " | wc -w | perl -pe 'chomp; s/ +//;'"
     let result = system(cmd)
     echo result . " words"
 endfunction
+
+command WC call WC()
 
 """"""""""""""""""""""""""""""""""""
 " plugins
