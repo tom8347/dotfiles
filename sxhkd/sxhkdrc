@@ -26,7 +26,7 @@ super + Delete
 
 #------------launch applications---------
 alt + b
-  export MOZ_USE_XINPUT2=1 ; librewolf
+  export MOZ_USE_XINPUT2=1 ; firefox-esr --new-window
 
 alt + shift + b
   midori
@@ -66,7 +66,7 @@ alt + l
   xdotool keyup l key --clearmodifiers Right
 
 alt + m
-  kitty htop
+  system-monitoring-center
 
 alt + p
   pamac-manager
@@ -121,7 +121,7 @@ super + alt + {q,r}
 ctrl + shift + q
   bspc node -c
 
-super + x
+super + w
   bspc node -c
 # alternate between the tiled and monocle layout
 #super + m
@@ -178,8 +178,8 @@ super + {grave,Tab}
 
 # focus or send to the given desktop
 # running bspwm inside xfce fucks the way the workspaces are numbered/ordered
-super + {_,shift + }{1,2,3,4,5,6,7,8}
-	bspc {desktop -f,node -d} '^{3,4,5,6,7,8,1,2}'
+super + {_,shift + }{1,2,3,4,5,6,7,8,9,0}
+	bspc {desktop -f,node -d} '^{4,5,6,7,8,9,1,2,3,4}'
 
 #
 # preselect

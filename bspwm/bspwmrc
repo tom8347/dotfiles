@@ -8,6 +8,8 @@ if [ -s ~/.Xresources ]; then
     xrdb ~/.Xresources
 fi
 
+nvidia-settings --assign CurrentMetaMode="DPY-2: nvidia-auto-select @2560x1440 +1920+0 {ViewPortIn=2560x1440, ViewPortOut=2560x1440+0+0, ForceCompositionPipeline=On, ForceFullCompositionPipeline=On}, DPY-3: nvidia-auto-select @1920x1080 +0+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0, ForceCompositionPipeline=On, ForceFullCompositionPipeline=On}"
+
 killall sxhkd ; sxhkd &
 killall polybar
 polybar main &
@@ -16,8 +18,8 @@ killall touchegg ; touchegg &
 nitrogen --restore &
 killall nm-applet ; nm-applet &
 
-bspc monitor HDMI-0 -d VII VIII I II III IV
-bspc monitor HDMI-1 -d V VI
+bspc monitor HDMI-0 -d I II III IV V VI
+bspc monitor HDMI-1 -d VII VIII IX
 # bspc monitor HDMI-1 -d IX X
 
 bspc config border_width         4
